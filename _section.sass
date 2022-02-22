@@ -1,0 +1,76 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.main
+    position: absolute
+    color: $color-font
+    font-family: $fam-font
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: $color-bg
+    width: 400px
+    height: 500px
+    border-radius: 20px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr
+    padding: 10px
+    gap: 5px
+
+.result
+    margin: 30px
+    font-size: 25px
+    height: 80px
+    text-align: right
+    line-height: 80px
+    border-radius: 20px
+    background-color: royalblue
+    grid-column-start: 1
+    grid-column-end: 5
+
+div
+    background-color: gray
+    text-align: center
+    line-height: 60px
+    transition: .3s linear
+
+.zero
+    background-color: orange
+    grid-column-start: 1
+    grid-column-end: 3
+
+.end
+    background-color: orange
+    line-height: 120px
+    grid-column-start: 4
+    grid-row-start: 5
+    grid-row-end: 7
+
+.dot
+    grid-column-start: 3
+    grid-row-end: 7
+    background-color: black
+
+.delate
+    grid-column-start: 1
+    grid-column-end: 3
+    background-color: black
+
+.division
+    background-color: black
+
+.multiplication
+    background-color: black
+
+.plus
+    background-color: black
+
+.minus
+    background-color: black
+
+div:hover
+    cursor: pointer
+    background-color: lightblue
